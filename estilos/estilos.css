@@ -3,22 +3,21 @@ body{
   background: #F6F8FF 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-
-#titulo {
+.titulo {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 36px;
     font-weight: bold;     
 
 }
 
-#titulo1 {
+.titulo1 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 34px;
   font-weight: bold;
   text-align: center;     
 }
 
-#preguntas {
+.preguntas {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: #A5A5A5;
   opacity: 1;
@@ -26,22 +25,34 @@ body{
   font-size: 20px;    
 }
 
-table, th, td {
-    border: 1px solid white;
+table, th {
+    border: 5px solid #D5DDED 0% 0% no-repeat padding-box;     
     border-collapse: separate;    
     border-spacing: 8px;
     height: 45px;
   }
 
-  #datos1 {
+  .datos1 {
     background: #D5DDED 0% 0% no-repeat padding-box;    
     padding-left: 15px;     
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #667796;
 
   }
-  #botonestabla{
+
+  .datos2 {
+    background: #D5DDED 0% 0% no-repeat padding-box;    
+    padding-left: 15px;     
+    font-size: 24px;
+    font-weight: bold;
+    color: #667796;
+    width: 200px;
+    height: 60px;
+  }
+
+
+  .botonestabla{
     width: 115px;
     height:40px;
     color: white;
@@ -51,6 +62,10 @@ table, th, td {
   #botonentrada{
     background: #BFBAFF;   
     border: none;     
+    border-radius: 12px;
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
   }
 
   .ocultar {
@@ -62,8 +77,20 @@ table, th, td {
     margin-top: 40px;
   }
 
-  #botantsig {
+  .botantsig {
     width:200px;
     height: 10px;
+    border-radius: 20px;
   }
 
+
+footer {
+  position: fixed;  
+  bottom: 0px;  
+  width: 100%;  
+  margin-left: -40px; 
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
