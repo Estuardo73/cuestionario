@@ -4,21 +4,21 @@ body{
   opacity: 1;
 }
 .titulo {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 36px;
+    font-family: 'Convergence', sans-serif;
+    font-size: 44px;
     font-weight: bold;     
 
 }
 
 .titulo1 {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 34px;
+  font-family: 'Convergence', sans-serif;
+  font-size: 44px;
   font-weight: bold;
   text-align: center;     
 }
 
 .preguntas {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Convergence', sans-serif;
   color: #A5A5A5;
   opacity: 1;
   text-align:center;
@@ -47,8 +47,8 @@ table, th {
     font-size: 24px;
     font-weight: bold;
     color: #667796;
-    width: 200px;
-    height: 60px;
+    width: 400px;
+    height: 40px;
   }
 
 
@@ -78,9 +78,9 @@ table, th {
   }
 
   .botantsig {
-    width:200px;
-    height: 10px;
-    border-radius: 20px;
+    border-radius: 17px;
+    width: 130px;
+    height: 40px;
   }
 
 
@@ -90,7 +90,9 @@ footer {
   width: 100%;  
   margin-left: -40px; 
 }
+  
 
 input[type=checkbox] {
   transform: scale(1.5);
+  margin: 20px !important;
 }
