@@ -30,7 +30,10 @@
       document.getElementById("inicio").classList.remove('ocultar');
       document.getElementById("inicio").classList.add('mostrar');      
       document.getElementById("pregunta1").classList.add('ocultar');
-      document.getElementById("pregunta1").classList.remove('mostrar');   
+      document.getElementById("pregunta1").classList.remove('mostrar');  
+      document.getElementById("finalizar").classList.remove('mostrar');
+      document.getElementById("finalizar").classList.add('ocultar');   
+
       document.getElementById("pieimg").src="imagenes/pie0.jpg";
     }
 
@@ -98,7 +101,162 @@
       document.getElementById("pieimg").src="imagenes/pie4.jpg";
 
     }
+
+    function fin(){         
+      document.getElementById("pregunta5").classList.remove('mostrar');
+      document.getElementById("pregunta5").classList.add('ocultar');   
+      document.getElementById("finalizar").classList.remove('ocutlar');
+      document.getElementById("finalizar").classList.add('mostrar');  
+      document.getElementById("pieimg").src="imagenes/pie0.jpg";
+
+    }
+
+    function Antfin(){         
+      document.getElementById("pregunta5").classList.add('mostrar');
+      document.getElementById("pregunta5").classList.remove('ocultar');   
+      document.getElementById("finalizar").classList.remove('mostrar');
+      document.getElementById("finalizar").classList.add('ocultar');  
+      document.getElementById("pieimg").src="imagenes/pie4.jpg";
+
+    }
     
+    function clickp2i1(){
+      document.getElementById("p2imagen1").classList.remove('foto');      
+      document.getElementById("p2imagen1").classList.add('fotosel');  
+      
+      document.getElementById("p2imagen2").classList.remove('fotosel');      
+      document.getElementById("p2imagen2").classList.add('foto');  
+      
+      document.getElementById("p2imagen3").classList.remove('fotosel');      
+      document.getElementById("p2imagen3").classList.add('foto');  
+
+      document.getElementById("p2imagen4").classList.remove('fotosel');      
+      document.getElementById("p2imagen4").classList.add('foto');  
+
+
+    }
+
+    function clickp2i2(){     
+      
+      document.getElementById("p2imagen2").classList.remove('foto');      
+      document.getElementById("p2imagen2").classList.add('fotosel');  
+      
+      document.getElementById("p2imagen3").classList.remove('fotosel');      
+      document.getElementById("p2imagen3").classList.add('foto');  
+
+      document.getElementById("p2imagen4").classList.remove('fotosel');      
+      document.getElementById("p2imagen4").classList.add('foto');  
+
+      document.getElementById("p2imagen1").classList.remove('fotosel');      
+      document.getElementById("p2imagen1").classList.add('foto');    
+
+    }
+
+    function clickp2i3(){     
+      
+      
+      
+      document.getElementById("p2imagen3").classList.remove('foto');      
+      document.getElementById("p2imagen3").classList.add('fotosel');  
+
+      document.getElementById("p2imagen4").classList.remove('fotosel');      
+      document.getElementById("p2imagen4").classList.add('foto');  
+
+      document.getElementById("p2imagen1").classList.remove('fotosel');      
+      document.getElementById("p2imagen1").classList.add('foto');    
+
+      document.getElementById("p2imagen2").classList.remove('fotosel');      
+      document.getElementById("p2imagen2").classList.add('foto');  
+
+    }
+
+    function clickp2i4(){          
+      
+      
+      document.getElementById("p2imagen4").classList.remove('foto');      
+      document.getElementById("p2imagen4").classList.add('fotosel');  
+
+      document.getElementById("p2imagen1").classList.remove('fotosel');      
+      document.getElementById("p2imagen1").classList.add('foto');    
+
+      document.getElementById("p2imagen2").classList.remove('fotosel');      
+      document.getElementById("p2imagen2").classList.add('foto');  
+
+      document.getElementById("p2imagen3").classList.remove('fotosel');      
+      document.getElementById("p2imagen3").classList.add('foto');  
+
+
+    }
+
+    function clickp2b1(){
+      clickp2i1();  
+    }
+
+    function clickp2b2(){
+      clickp2i2();  
+    }
+
+    function clickp2b3(){
+      clickp2i3();  
+    }
+
+    function clickp2b4(){
+      clickp2i4();  
+    }
+
+    function clickp3i1(){
+      document.getElementById("p3imagen1").classList.remove('foto');      
+      document.getElementById("p3imagen1").classList.add('fotosel');  
+      
+      document.getElementById("p3imagen2").classList.remove('fotosel');      
+      document.getElementById("p3imagen2").classList.add('foto');      
+      
+    }
+
+    function clickp3i2(){     
+      
+      document.getElementById("p3imagen2").classList.remove('foto');      
+      document.getElementById("p3imagen2").classList.add('fotosel');    
+    
+
+      document.getElementById("p3imagen1").classList.remove('fotosel');      
+      document.getElementById("p3imagen1").classList.add('foto');    
+
+    }
+    function clickp3b1(){
+      clickp3i1();  
+    }
+
+    function clickp3b2(){
+      clickp3i2();  
+    }
+
+    function clickp5i1(){
+      document.getElementById("p5imagen1").classList.remove('foto');      
+      document.getElementById("p5imagen1").classList.add('fotosel');  
+      
+      document.getElementById("p5imagen2").classList.remove('fotosel');      
+      document.getElementById("p5imagen2").classList.add('foto');      
+      
+    }
+
+    function clickp5i2(){     
+      
+      document.getElementById("p5imagen2").classList.remove('foto');      
+      document.getElementById("p5imagen2").classList.add('fotosel');    
+    
+
+      document.getElementById("p5imagen1").classList.remove('fotosel');      
+      document.getElementById("p5imagen1").classList.add('foto');    
+
+    }
+    function clickp5b1(){
+      clickp5i1();  
+    }
+
+    function clickp5b2(){
+      clickp5i2();  
+    }  
 
   </script>
 
@@ -315,43 +473,43 @@
             <div class="row">
                 <div class="col-3">
                     <div class="d-flex justify-content-center">                          
-                       <img src="imagenes/PDV.jpg" style="width:300px; height: 201px;">                                                                   
+                       <img src="imagenes/PDV.jpg" class="foto" id="p2imagen1" onclick="clickp2i1()">                                                                   
                     </div>                        
                     <br>
                     <br>                    
                     <div class="d-flex justify-content-center">
-                        <button id="botonentrada" type="button" class="btn btn-secondary">Punto de Venta</button>
+                        <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp2b1()">Punto de Venta</button>
                     </div>      
                 </div>
                 <div class="col-3">
                     <div class="d-flex justify-content-center">
-                        <img src="imagenes/consultorio.jpg" style="width:300px; height: 201px;" >                                                                   
+                        <img src="imagenes/consultorio.jpg" class="foto"  id="p2imagen2" onclick="clickp2i2()" >                                                                   
                      </div>                          
                      <br>
                      <br>   
                      <div class="d-flex justify-content-center">
-                         <button id="botonentrada" type="button" class="btn btn-secondary">Consultorio</button>
+                         <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp2b2()" >Consultorio</button>
                      </div>      
                 </div>
                 <div class="col-3">
                     <div class="d-flex justify-content-center" >                          
-                        <img src="imagenes/hospital.jpg" style="width:300px; height: 201px;" >                                                                   
+                        <img src="imagenes/hospital.jpg"  class="foto"  id="p2imagen3" onclick="clickp2i3()" >                                                                   
                      </div> 
                      <br>
                      <br>     
                    
                      <div class="d-flex justify-content-center">
-                         <button id="botonentrada" type="button" class="btn btn-secondary">Hospital</button>
+                         <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp2b3()">Hospital</button>
                      </div>      
                 </div>
                 <div class="col-3">
                     <div class="d-flex justify-content-center" >                          
-                        <img  src="imagenes/otros.jpg"  style="width:300px; height: 201px;"  >                                                                   
+                        <img  src="imagenes/otros.jpg"   class="foto"   id="p2imagen4" onclick="clickp2i4()" >                                                                   
                      </div>    
                      <br>
                      <br>   
                      <div class="d-flex justify-content-center">
-                         <button id="botonentrada" type="button" class="btn btn-secondary">Otro</button>
+                         <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp2b4()">Otro</button>
                      </div>      
                 </div>                
             </div>                  
@@ -369,6 +527,35 @@
                 </div>
               </div>            
             <p class="titulo1">Seleciona la situacion</p>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-3">
+                  <div class="d-flex justify-content-end" >                          
+                     <img src="imagenes/oportunidad.jpg" class="foto" id="p3imagen1" onclick="clickp3i1()">                                                                   
+                  </div>                        
+                  <br>
+                  <br>                    
+                  <div class="d-flex justify-content-center">
+                      <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp3b1()">Oportuindad</button>
+                  </div>      
+              </div>
+              <div class="col-3">
+                  <div class="d-flex justify-content-start" >
+                      <img src="imagenes/amenaza.jpg" class="foto"  id="p3imagen2" onclick="clickp3i2()" >                                                                   
+                   </div>                          
+                   <br>
+                   <br>   
+                   <div class="d-flex justify-content-center">
+                       <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp3b2()" >Amenaza</button>
+                   </div>      
+              </div>          
+              <div class="col-3"></div>
+            </div> 
+            <br>
+            <br>
+            <div class="col d-flex justify-content-center">
+               <textarea id="comentariop3" class="comentario" maxlength="240"></textarea>
+            </div>
                   
         </div>
         <div id="pregunta4" class="ocultar">
@@ -383,7 +570,10 @@
                     <button type="button" class="btn btn-secondary botantsig"  onclick="Sigp5()" >Siguiente</button>                    
                 </div>
               </div>            
-            <p class="titulo1">Deja un comentario general</p>                  
+            <p class="titulo1">Deja un comentario general</p>      
+            <div class="col d-flex justify-content-center">
+              <textarea id="comentariopgral" class="comentariog" maxlength="1250"></textarea>
+           </div>            
         </div>
         <div id="pregunta5" class="ocultar">
             <div class="row">
@@ -394,12 +584,58 @@
                     <p class="preguntas">Pregunta 5 de 5</p>        
                 </div>
                 <div class="col-4 d-flex justify-content-end">                   
-                    <button type="button" class="btn btn-secondary botantsig" >Siguiente</button>                    
+                    <button type="button" class="btn btn-secondary botantsig" onclick="fin()" >Finalizar</button>                    
                 </div>
               </div>            
-            <p class="titulo1">Sube fotos de evidencia</p>                  
+            <p class="titulo1">Sube fotos de evidencia</p>  
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-3">
+                  <div class="d-flex justify-content-end" >                          
+                     <img src="imagenes/foto1.png" class="foto" id="p5imagen1" onclick="clickp5i1()">                                                                   
+                  </div>                        
+                  <br>
+                  <br>                    
+                  <div class="d-flex justify-content-center">
+                      <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp5b1()">Foto 1</button>
+                  </div>      
+              </div>
+              <div class="col-3">
+                  <div class="d-flex justify-content-start" >
+                      <img src="imagenes/foto2.png" class="foto"  id="p5imagen2" onclick="clickp5i2()" >                                                                   
+                   </div>                          
+                   <br>
+                   <br>   
+                   <div class="d-flex justify-content-center">
+                       <button id="botonentrada" type="button" class="btn btn-secondary" onclick="clickp5b2()" >Foto 2</button>
+                   </div>      
+              </div>          
+              <div class="col-3"></div>
+            </div>   
+            <br>
+            <br>
+            <div class="col d-flex justify-content-center">
+               <textarea id="comentariop5" class="comentario" maxlength="240"></textarea>
+            </div>
+
         </div>
-      
+        <div id="finalizar" class="ocultar">
+          <div class="row">
+            <div class="col-4">
+                <button type="button" class="btn btn-secondary botantsig" onclick="Antfin()">Anterior</button>
+            </div>
+            <div class="col-4 d-flex justify-content-center">               
+            </div>
+            <div class="col-4 d-flex justify-content-end">    
+                <button type="button" class="btn btn-warning  botantsig" style="margin-right: 15px;" onclick="inicio()" >Cancelar</button>                                   
+                <button type="button" class="btn btn-secondary botantsig" >Guardar</button>                    
+            </div>
+          </div>            
+          <p class="titulo1">¡Gracias por tu cooperacion!</p>              
+            <div class="d-flex justify-content-center" >                          
+              <img src="imagenes/gracias.jpg"  id="p5imagen1" width="600" height="500">                                                                   
+            </div>
+         </div>
       </div>
 
       <footer>
